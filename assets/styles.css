@@ -1,0 +1,13 @@
+:root {
+  --color-primary: #00c3f4;
+  --color-primary-variant: #0062f4;
+  --color-gradient: linear-gradient(
+    var(--color-primary),
+    var(--color-primary-variant)
+  );
+  --color-white: #fff;
+  --color-black: #000;
+
+  --container-width-lg: 80%;
+  --container-width-md: 92%;
+}
