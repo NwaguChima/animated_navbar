@@ -27,3 +27,28 @@ body {
   background: var(--color-gradient);
   min-height: 100vh;
 }
+
+nav {
+  background: var(--color-white);
+  width: 100vw;
+  height: 4rem;
+  display: grid;
+  place-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.nav__container {
+  width: var(--container-width-lg);
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__toggle-btn {
+  display: none;
+}
