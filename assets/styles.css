@@ -79,6 +79,7 @@ nav {
   font-weight: 500;
   height: 100%;
   display: flex;
+  position: relative;
   align-items: center;
   transition: color 400ms ease;
   -webkit-transition: color 400ms ease;
@@ -89,4 +90,26 @@ nav {
 
 .nav__links li a:hover {
   color: var(--color-primary);
+}
+
+.nav__links li a.active::after {
+  content: "";
+  display: block;
+  background: var(--color-primary);
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+section {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+section h1 {
+  text-transform: uppercase;
+  color: var(--color-white);
+  font-size: 3rem;
 }
