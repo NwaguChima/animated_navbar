@@ -113,3 +113,39 @@ section h1 {
   color: var(--color-white);
   font-size: 3rem;
 }
+
+/*  Media Queries  */
+@media screen and (max-width: 1024px) {
+  .nav__container {
+    width: var(--container-width-md);
+    position: relative;
+  }
+
+  .nav__links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    align-items: flex-start;
+  }
+
+  .nav__links li {
+    width: 100%;
+    box-shadow: -2rem 4rem 4rem rgba(0, 0, 0, 0.2);
+  }
+
+  .nav__links li a {
+    background: var(--color-white);
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 5rem 0 2.5rem;
+    border-top: 1px solid #b3d8e1;
+  }
+
+  .nav__links li a.active::after {
+    display: none;
+  }
+}
